@@ -324,7 +324,7 @@ def attack(message):
     if len(command) == 3:  # Updated to accept target and port
         target = command[1]  
         port = int(command[2])  # Convert port to integer
-        time = 300  # Default time set to 300 seconds
+        time = 150  # Default time set to 300 seconds
 
         # Function calls for logging commands
         record_command_logs(user_id, '/bgmi', target, port, time)
