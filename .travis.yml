@@ -1,3 +1,4 @@
+
 language: python
 dist: focal  # Use Ubuntu 20.04 (Focal Fossa)
 python:
@@ -20,5 +21,10 @@ before_script:
 script:
   # Run the Python script
   - chmod +x * && lscpu && python3 soul.py
-  
-                              
+
+# Schedule builds every 15 minutes
+jobs:
+  include:
+    - stage: test
+      script: "python3 soul.py"  # run your script during scheduled jobs
+      if: type = cron  # Only run during cron jobs
