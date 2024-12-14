@@ -1,4 +1,3 @@
-import Thread
 import threading
 import telebot
 import subprocess
