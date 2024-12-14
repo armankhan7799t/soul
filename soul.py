@@ -1,4 +1,5 @@
-from threading import Thread
+import Thread
+import threading
 import telebot
 import subprocess
 import requests
